@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="DefaultStyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-12 bg-2 center-left calibri color-1 pad-top-10">
+            <h1 class="title-txt"><a href="Index.html" data-toggle="popover" data-trigger="hover" data-content="Click me to go back to the about page." data-placement="right" name="To About Me">Leopold Brunette</a></h1>
+            <hr />
+        </div>
+    </div>
+    <div class="row bg-2 color-1 center-align mrg-auto">
+        <div class="mrg-auto width-90">
+            <div class="col-md-2 button-div"><a href="ATM.html" class="button calibri ln-h-20">SafeNet Consulting C#</a></div>
+            <div class="col-md-2 button-div"><a href="SourceControl.html" class="button calibri ln-h-50">Source Control</a></div>
+            <div class="col-md-2 button-div"><a href="Javascript.html" class="button calibri ln-h-50">JavaScript</a></div>
+            <div class="col-md-2 button-div"><a href="MVC.html" class="button calibri ln-h-50">MVC and C#</a></div>
+            <div class="col-md-2 button-div"><a href="Reflection.html" class="button calibri ln-h-20">Summer Camp Reflection</a></div>
+            <div class="col-md-2 button-div"><a href="FinalProject.html" class="button calibri ln-h-50">Final Project</a></div>
+        </div>
+    </div>
+    <div class="row center-align">
+        <div class="col-md-1"></div>
+        <div class="col-md-5 left-align georgia color-4 pad-20 left-margin">
+            <h2 class="calibri">Reflection</h2>
+            <p>The Full Stack Summer Camp was one of the great experiences of my life. The three week camp offered an amazing curriculum that allowed me to learn such an enormous amount of information. The Summer Camp introduced me to brand new topics such as Full Stack development and the MVC Framework. It also re-introduced me to previous topics I was somewhat familiarly with like HTML, CSS, JavaScript, and C#. The camp provided a lot of challenges but they were definitely worth the reward as I feel confident in my abilities to program as a Full Stack Developer.</p>
+            <p>The amount of new information that was put in front of me during these three weeks was immense. It consisted of five separate ‘languages’ and expanded to many uses. The first concept/language we were introduced to was Source Control, one of the most important processes of development everyone needed to be fluent in. Source Control is the process of a group fluidly working on a project together. This is a way to stay organized so that different developers are not coding over each other and creating large errors when they combine their work. This is why we use Source Control in the from of GitKraken to organize our work as a team. This proved to be not too challenging in the initial problems that were presented to us, however this is a persistent concept throughout all of software development and especially Full Stack. This showed true as we faced issues with our source control once we moved onto the MVC Framework. The second language that was presented to me was C#, a strong typed language similar to Java which I was already very familiar with. C# was easy for me to learn as it shared so much in common with Java. This made the use of it later on in MVC much more comfortable compared to other languages like JavaScript.</p>
+        </div>
+        <div class="col-md-5 center-align georgia color-4 pad-20">
+            <!--THIS IS GOING TO BE THE GROUP PICTURE-->
+            <img src="Images/safenet2.jpg" class="width-100 top-margin"/>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <div class="row center-align">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 left-align georgia color-4 pad-20 left-margin">
+            <p>The next three languages I worked with were HTML, CSS, and JavaScript. These three languages go hand in hand in web development to create the front-end of all websites. I was already familiar with all three of these languages, but not nearly to the extent necessary for what I would need to work on Full Stack. The hardest language for me to improve on was JavaScript. This was because we were importing and using a JavaScript framework called Vue. Vue changed the syntax and format of JavaScript which I had to adjust to. However, after that the implementation was simple by using functions that are called by event listeners.</p>
+            <p>All of the languages above were the backbone of the most important concept of the Summer Camp and our main goal: Full Stack Development. Full Stack Development refers to the ability to create all sections of the stack and MVC Framework. The MVC Framework is comprised of five layers: views, controllers, services, repositories, and databases. The view is what the user sees, it is made up of HTML, CSS, JavaScript, and Razor Code. Razor Code is code that is run when the project is built and it takes information from the controller and passes it to the view, this is what allows for information from databases to be shown on views. The controller is a C# class that gets information from the view and passes it to the service. The service is another C# class which mainly consists of pass through classes that take information from the controller and pass it to the repository. The repository is a C# class that takes the information from the service and interacts with the database using SQL commands. The repository is responsible for most calculations and jobs such as searching and sorting. This is because the repository utilizes SQL which is much faster at working with data from a database than C# is at working with information in the form of lists of arrays.</p>
+            <p>The biggest difficulty I faced was the communication between views and controller. For me controllers are the most confusing part as they fuse all the parts together. They are required to take and give information to the views and do the same for services, as well as pass information to the views for Razor Code to use. I struggled with partnering views and controllers, this got especially messy when I tried to incorporate JavaScript into my views. The combination of so many things in a single element presented a challenge. To figure this out I asked my team who were able to show me some of their examples. This helped me work through my problems by referencing what they had done in their code and comparing/fixing mine. This shows again the importance and how powerful it is to work as a team.</p>
+            <p>Overall I could not have been more happy with how the summer camp turned out. Yes, there may have been some long days with technical issues but it lead to an amazing environment where everybody wanted to learn. I am so glad I was able to take part in this experience and I am so thankful for the opportunity. I think my knowledge of Full Stack Development has grow an insane amount in such a short time. I am excited for how I will use this new found knowledge to better my community.</p>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <footer>
+        <div class="row bg-2">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 pad-20 calibri color-1 center-align"><a href="Downloadables/Downloadables.zip" download>Download All Projects/Solutions here.</a></div>
+            <div class="col-md-1"></div>
+        </div>
+    </footer>
+</body>
+</html>
+<script>
+    $(document).ready(function () {
+        $('[data-toggle="popover"]').popover();
+    });
+</script>
+<!--Colors:
+    #E9FFF8 Off-White
+    #00CC90 Bright-Teal
+    #267F65 Dark-Teal
+    #00120D Almost-Black
+    -->

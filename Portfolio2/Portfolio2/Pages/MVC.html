@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link href="DefaultStyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-12 bg-2 center-left calibri color-1 pad-top-10">
+            <h1 class="title-txt"><a href="Index.html" data-placement="right" data-toggle="popover" data-trigger="hover" data-content="Click me to go back to the about page.">Leopold Brunette</a></h1>
+            <hr />
+        </div>
+    </div>
+    <div class="row bg-2 color-1 center-align mrg-auto">
+        <div class="mrg-auto width-90">
+            <div class="col-md-2 button-div"><a href="ATM.html" class="button calibri ln-h-20">SafeNet Consulting C#</a></div>
+            <div class="col-md-2 button-div"><a href="SourceControl.html" class="button calibri ln-h-50">Source Control</a></div>
+            <div class="col-md-2 button-div"><a href="Javascript.html" class="button calibri ln-h-50">JavaScript</a></div>
+            <div class="col-md-2 button-div"><a href="MVC.html" class="button calibri ln-h-50">MVC and C#</a></div>
+            <div class="col-md-2 button-div"><a href="Reflection.html" class="button calibri ln-h-20">Summer Camp Reflection</a></div>
+            <div class="col-md-2 button-div"><a href="FinalProject.html" class="button calibri ln-h-50">Final Project</a></div>
+        </div>
+    </div>
+    <div class="row center-align">
+        <div class="col-md-1"></div>
+        <div class="col-md-5 left-align georgia color-4 pad-20 left-margin">
+            <h2 class="calibri">MVC</h2>
+            <p>The MVC activities and project were the group's first introduction to true Full Stack development. We were given an already set-up project/solution that was ready to be used for the MVC Framework. We then had to go through a process of creating the service, controller, and views. This taught us a lot of new information as well as gave us some important tips to remember.</p>
+            <p>For this project we all split off separately each working on our own view. This allowed for each of us to get a feel for the Full Stack development. This was not too challenging as our tass was very simple, complete unit conversions on the server side. We simply received data from a form in the view, brought it to the controller to call a method in the service which passed the information in form and converted the units. This was then sent back to the new view with the conversion passed to it using razor code. This allowed us to do the calculations, which was not very difficult.</p>
+            <p>
+                The real difficulty for me came from the styling and user experience. In our previous JavaScript unit conversion project we had a simple styling where you could enter a number into one of the two input boxes and the opposing one would change with the converting unit allowing for the user to convert in either direction. We wanted to recreate that in the MVC unit conversion project which posed more challenges than expected. Our first change was that we were using a form submission rather than JavaScript, this meant that we needed a submit button. Our solution to this was to change our equivalent symbol in between the two input boxes to be our form submission button. This didn’t cause too many issues, just a simple change from a header to a submit button. The next biggest issue was choosing our input. With our design we had two input boxes which could both take input at the same time, this causes an issue for the converting as it could just convert both and place it into the opposing box in the new view. However, then the user would not be able to see their initial input so the information would not make any sense. To fix this I looked at JavaScript to not allow for the user to input into both boxes. When the user is typing into one input box it would set the other equal to zero. Simply, in the service we checked for which input was not equal to zero and converted that one. This solved our problem and allowed us to keep the sleek interface from the previous project.
+            </p>
+        </div>
+        <div class="col-md-5 center-align georgia color-4 pad-20">
+            <img src="Images/MVC1.JPG" class="width-100 top-marg-50" />
+            <img src="Images/MVC2.JPG" class="width-100 top-marg-50"/>
+            <img src="Images/MVC3.JPG" class="width-100 top-marg-50"/>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <footer>
+        <div class="row bg-2">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 pad-20 calibri color-1 center-align"><a href="Downloadables/UnitConversionMVC99.zip" download>Download Project/Solution for this project here.</a></div>
+            <div class="col-md-1"></div>
+        </div>
+    </footer>
+</body>
+</html>
+<script>
+    $(function () {
+        $('[data-toggle="popover"]').popover()
+    })
+</script>
+<!--Colors:
+    #E9FFF8 Off-White
+    #00CC90 Bright-Teal
+    #267F65 Dark-Teal
+    #00120D Almost-Black
+    -->
